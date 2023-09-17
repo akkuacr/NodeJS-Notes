@@ -1,0 +1,34 @@
+ List of content:
+1. Architecture of nodeJS
+2. Working of nodeJs
+3.Components of nodeJS
+4.Advantages of NodeJS
+
+ Intro to   NodeJS
+1.it is an open source project
+2.It provides Javascript Runtime Environment
+3.It is Event Driven
+
+Javascript uses blocking & non-blocking  I/O model
+NodeJs is build upon JavaScript  & c/c++ 
+means nodejs ka low level c/c++ likha hua h
+ Nodejs is used in I/o file system
+
+Nodejs is used in
+1.Realtime application
+2. Single page Application (SPA)
+3. IOT Apps
+4. Data Streaming App
+
+Nodejs works in single thread
+Why does Nodejs uses "Single-threaded event loop model " archietecture?
+ 
+
+
+
+
+
+
+
+
+

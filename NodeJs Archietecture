@@ -1,4 +1,4 @@
- List of content:
+  List of content:
 1. Architecture of nodeJS
 2. Working of nodeJs
 3.Components of nodeJS
@@ -21,7 +21,16 @@ Nodejs is used in
 4. Data Streaming App
 
 Nodejs works in single thread
+koi v application ko scale krne k liye hum kayi chije kr skte h jese ki python wagera m multi-threaded hote h jo scaling m kaam ata h
+as javascript k paradigm m based h node js so yeh single threaded hota h
+
+
+
 Why does Nodejs uses "Single-threaded event loop model " archietecture?
+
+
+
+baki gyan pdf m store hoga...qki diagram  
  
 
 

@@ -27,4 +27,19 @@ When an intializer is specified ,it installs the corressponding npm package name
 
 -> create <intializer> using npm-exec
 
+To install any packages in any node
+1 . use 'npm install package_name' example such as typescript package and express package
+2. if you want to save package into dependency list (or package.json) use -'npm install package_name --save'
+3. npm install package_name --save-dev :-ye package.json m save hogi as a dev package aur dev k bare m avi dekhenge
+dev dependencies woh hoti h jo hum bilt tym m use krte h naki user ko serve krne k liye 
+
+4.agr multiple packages install krne ho tab
+npm install package1 package2 package3
+
+To uninstall any package use 'uninstall' in place  of install  'npm uninstall  package_name'  
+
+
+aur Package.json k bare m pd lena
+
+
 

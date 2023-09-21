@@ -1,0 +1,35 @@
+List of a content :
+1.What is a file System
+2.opening a file
+3.Reading a file
+4.Writing to a file
+5.Appending to a file
+6.Closing a file
+7.Deleting a File
+
+File System
+
+Nodejs is a platform that uses Chrome's V8 JavaScript engine ,allowing devlopers to use Javascript to create server-side Applications that generate 
+dynamic content for web clients
+What sets node js apart are event driven and non-blocking I/o operations
+NodeJS includes a built in module called FS(File System) that allows users to manage Files by creating,reading,deleting and performing other file operations
+To use this module ,devlopers can call the "require()" method , which provides acess to POSIX functions Wrapped by Node.js to enable boht synchronous and asynchronous file system operations,depending on the user
+requirements
+
+var fs=require('fs');
+
+
+Synchronous vs Asynchronous approach :
+
+The Synchronous approach involves blocking functions that wait for each operation to complete before executing the next one.
+This means that a command won't execute until the query has finished executing and all the results from previous commands have been obtained. 
+
+On the other hand, the Asynchronous approach involves non-blocking functions that execute all operations at once, without waiting for each operation to complete. 
+The results of each operation are handled when they become available, and each command is executed after the previous one. If the operations involve querying large amounts of data from a database, the Asynchronous approach is recommended. 
+
+
+
+
+
+
+

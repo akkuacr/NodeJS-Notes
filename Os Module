@@ -1,0 +1,18 @@
+OS Module 
+1.The Os module in Nodejs is utilized to retrieve details about the operating system of computer
+2.It offers for communication with the computer's operating system,including retreiving the hostname and the amount of available system memory in bytes
+
+Commands
+os.arch();it return the archietecture of the os
+os.freemem();it return the available memory of the network
+os.totalmem();it return the total memory of the network
+os.networkInterfaces();it return various attributes you can see it here :https://www.geeksforgeeks.org/node-js-os-networkinterfaces-method/
+os.tmpdir();it return the available temporary directory
+
+and some other commands
+
+console.log('Endianess:'+os.endianness());
+console.log('Host name:'+os.hostname());
+console.log('Os type:'+os.type());
+console.log('Os platform '+ os.platform());
+console.log('Os release '+ os.release());

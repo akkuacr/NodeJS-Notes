@@ -70,11 +70,15 @@ baki dusra tarika read krne ka yeh tarika h
 but mostly read krne k liye upar wala hi use hota h
 
 
+To open FIle use:-fs.open(path, flags, mode, callback)
+
+
+
  var fs=require('fs');
 //const { buffer } = require('stream/consumers');
 const buf=new Buffer(1024);
  
- //Async way to read File
+ 
   fs.open('input.txt','r+',function(err,fd){
      if(err)
      {
@@ -93,6 +97,60 @@ const buf=new Buffer(1024);
 
      });
   })
+
+
+
+To writing in File use:-
+writFile k andar sbse pehle file ka naam ,fir jo usme likhna h then callback jisme hum yeh dikha re h ki write ho chuka h
+
+fs.writeFile('input.txt','Akash',function(err){
+    if(err)
+    {
+        console.log('Error in writing');
+    }else{
+        console.log('sucess in writing File');
+    }
+})
+
+fs.writeFile('input.txt','Akash Chand',(err)=>{
+    if(err){
+        console.log('error');
+    }
+    console.log('done');
+})
+
+
+To append a data in a file use:-
+fs.appendFile(filepath, data, options, callback);
+for options check pdf
+
+//for closing 
+fs.close(fd,(err)=>{
+    if(err){
+        console.log('Error in Closing a file');
+    }else{
+        console.log('closed Sucessfully');
+    }
+})
+
+close krna isliye jruri h due to security issues
+
+
+for deleting a file
+fs.unlink('input.txt',function(err){
+    if(err)
+    {
+        console.log('file error');
+    }else{
+        console.log('file deleted');
+    }
+})
+
+
+
+
+
+
 
 
 

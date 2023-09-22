@@ -27,7 +27,72 @@ This means that a command won't execute until the query has finished executing a
 On the other hand, the Asynchronous approach involves non-blocking functions that execute all operations at once, without waiting for each operation to complete. 
 The results of each operation are handled when they become available, and each command is executed after the previous one. If the operations involve querying large amounts of data from a database, the Asynchronous approach is recommended. 
 
+Async Code:-
+var fs=require('fs');
+ 
+ //Async way to read File
+ console.log("read start");
+ var res=fs.readFile("input.txt",function(err,data){
 
+    if(err){
+        console.log("error Occured");
+        return err;
+    }
+    console.log("data:",data.toString());
+   return data.toString();
+ });
+
+ //console.log(res);
+
+ console.log("Other Stuff First");
+
+//dekh async m hum code se return ni krwa pare qki immediate m woh undefined dera h
+
+
+Sync Code:-
+
+console.log("read start");
+ var res=fs.readFileSync("input.txt");
+
+ console.log(res.toString());
+
+ console.log("Other Stuff First");
+
+//Sync m read krne k liye function ki jrurat ni pdti h
+
+jo yeh example dekha humne yeh high level api h.
+aur agr hume low level pe yehi kam krna hua toh tb yeh krenge
+
+
+
+Low level m hum pehle ise open krenge then baki operation krenge
+baki dusra tarika read krne ka yeh tarika h
+but mostly read krne k liye upar wala hi use hota h
+
+
+ var fs=require('fs');
+//const { buffer } = require('stream/consumers');
+const buf=new Buffer(1024);
+ 
+ //Async way to read File
+  fs.open('input.txt','r+',function(err,fd){
+     if(err)
+     {
+        console.log('Error');
+     }
+
+     console.log("Filed open Sucessfully!");
+     fs.read(fd,buf,0,buf.length,0,function(err,bytes){
+        if(err)
+        {
+            console.log('error occured');
+        }
+
+        console.log('Data:',bytes);
+        console.log('Data:',buf.slice(2,bytes).toString());
+
+     });
+  })
 
 
 

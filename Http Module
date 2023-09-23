@@ -1,0 +1,50 @@
+List of content:
+1.What is http?
+It stands for Hypertext tranfer protocol
+It is a protocol used for transmitting data over the internet. Http defines how clients and servers communicate with each other and how requests and responses should be formatted and 
+transmitted . It is the foundation of data communication for the world wide web or the internet.
+
+see diagram in pdf:-
+
+
+
+2.NodeJS http module
+NodeJS http module
+NodeJs http module is an integral component that facilitates various aspects of the HTTP protocol. To use the
+http module, start by creating a new file named "server.js" and then im%ort the http module using the require()
+function, as demonstrated in the following example:
+
+const http=require('http');
+const server=http.createServer((req,res)=>{
+     if(req.url=='/'){
+        res.write('<h1> HELLO NODE.Js </h1');
+     }else if(req.url=='/about')
+     {
+
+
+     res.end();
+})
+
+server.listen(5000);
+console.log('The http request is running on port 5000');
+
+
+ek baar pdf m v dekh lena smj aa jaega
+
+
+const http=require('http');
+const server=http.createServer((req,res)=>{
+     if(req.url=='/'){
+        res.write('<h1> HELLO NODE.Js </h1');
+     }else if(req.url=='/about')
+     {
+        res.write('<h1> Hello Buddy</h1>');
+     }
+
+     res.end();
+})
+
+server.listen(5001);
+console.log('The http request is running on port 5000');
+
+
